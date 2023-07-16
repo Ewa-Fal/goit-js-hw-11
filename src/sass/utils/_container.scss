@@ -1,0 +1,13 @@
+@use '../mixins/mediaquery' as mq;
+
+$mobile: mq.getBreakPoint(small);
+$tablet: mq.getBreakPoint(medium); 
+$desktop: mq.getBreakPoint(large); 
+$deafultPaddingLeft: 20px; 
+$deafultPaddingRight: 20px; 
+
+.container {
+  margin: 0 auto;
+  padding-left: $deafultPaddingLeft;
+  padding-right: $deafultPaddingRight;
+}
